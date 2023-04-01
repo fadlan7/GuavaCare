@@ -1,17 +1,19 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.fadlan.guavacare"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,10 +36,14 @@ android {
         noCompress "tflite"
         noCompress "lite"
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
-
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
@@ -48,9 +54,11 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
 
-    implementation "com.priyankvasa.android:cameraview-ex:3.5.1-alpha"
+    implementation "dev.priyankvasa.android:cameraview-ex:3.5.5-alpha"
 
     implementation 'org.tensorflow:tensorflow-lite:2.2.0'
+
+    implementation 'androidx.preference:preference-ktx:1.1.1'
 
     implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'

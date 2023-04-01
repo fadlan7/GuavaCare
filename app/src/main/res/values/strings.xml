@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">GuavaCare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="deteksi">Deteksi</string>
+
+    <string-array name="diseaseName">
+        <item><b>Guava healthy</b></item>
+        <item><b>Leaf healthy</b></item>
+        <item><b>Phytopthora</b></item>
+        <item><b>Red rust</b></item>
+        <item><b>Scab</b></item>
+        <item><b> Styler end Root</b></item>
+    </string-array>
+
+    <string-array name="detail_layout">
+        <item>@layout/fragment_home</item>
+<!--        <item>@layout/apple_black_rot_detail</item>-->
+<!--        <item>@layout/apple_cedar_rust_detail</item>-->
+<!--        <item>@layout/apple_healthy_detail</item>-->
+<!--        <item>@layout/cherry_powdery_mildew_detail</item>-->
+<!--        <item>@layout/cherry_healthy_detail</item>-->
+<!--        <item>@layout/corn_cercospora_leaf_spot_detail</item>-->
+<!--        <item>@layout/corn_common_rust_detail</item>-->
+<!--        <item>@layout/corn_northern_leaf_blight_detail</item>-->
+<!--        <item>@layout/corn_healthy_detail</item>-->
+<!--        <item>@layout/grape_black_rot_detail</item>-->
+<!--        <item>@layout/grape_esca_black_measles_detail</item>-->
+<!--        <item>@layout/grape_leaf_blight_detail</item>-->
+<!--        <item>@layout/grape_healthy_detail</item>-->
+<!--        <item>@layout/pepper_bacterial_spot_detail</item>-->
+<!--        <item>@layout/pepper_healthy_detail</item>-->
+<!--        <item>@layout/potato_early_blight_detail</item>-->
+<!--        <item>@layout/potato_late_blight_detail</item>-->
+<!--        <item>@layout/potato_healthy_detail</item>-->
+<!--        <item>@layout/strawberry_leaf_scorch_detail</item>-->
+<!--        <item>@layout/strawberry_healthy_detail</item>-->
+<!--        <item>@layout/tomato_bacterial_spot_detail</item>-->
+<!--        <item>@layout/tomato_early_blight_detail</item>-->
+<!--        <item>@layout/tomato_late_blight_detail</item>-->
+<!--        <item>@layout/tomato_leaf_mold_detail</item>-->
+<!--        <item>@layout/tomato_septoria_leaf_spot_detail</item>-->
+<!--        <item>@layout/tomato_spider_mites_detail</item>-->
+<!--        <item>@layout/tomato_target_spot_detail</item>-->
+<!--        <item>@layout/tomato_yellow_leaf_curl_virus_detail</item>-->
+<!--        <item>@layout/tomato_mosaic_virus_detail</item>-->
+<!--        <item>@layout/tomato_healthy_detail</item>-->
+    </string-array>
 </resources>
