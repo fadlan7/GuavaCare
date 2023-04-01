@@ -12,14 +12,14 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:keepScreenOn="true"
-        app:aspectRatio="3:5"
+        app:aspectRatio="3:6"
         app:autoFocus="continuous_picture"
         app:awb="auto"
         app:cameraMode="single_capture"
         app:facing="back"
         app:flash="auto"
         app:jpegQuality="medium"
-        app:layout_constraintBottom_toTopOf="@+id/btn_detect"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,21 +34,32 @@
         android:id="@+id/back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:padding="0dp"
-        app:cornerRadius="50dp"
-        app:elevation="3dp"
+        android:minWidth="55dp"
+        android:minHeight="55dp"
         app:icon="@drawable/ic_baseline_close_24"
-        app:iconGravity="textStart"
-        app:iconPadding="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_flash_light_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:clickable="true"
+        android:contentDescription="aaa"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:maxWidth="35dp"
+        android:maxHeight="35dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_flash_auto_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
 
 
     <TextView
@@ -56,6 +67,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:text="Deteksi Otomatis"
@@ -86,24 +98,6 @@
 <!--        app:layout_constraintEnd_toStartOf="@+id/iv_flash_light_mode"-->
 <!--        app:layout_constraintStart_toEndOf="@+id/guideline2"-->
 <!--        app:layout_constraintTop_toTopOf="@+id/iv_flash_light_mode" />-->
-
-    <ImageView
-        android:id="@+id/iv_flash_light_mode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:paddingLeft="4dp"
-        android:paddingTop="4dp"
-        android:paddingRight="4dp"
-        android:paddingBottom="4dp"
-        android:src="@drawable/ic_baseline_flash_auto_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="UnusedAttribute" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group2"
@@ -165,18 +159,32 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
 
-    <Button
+<!--    <Button-->
+<!--        android:id="@+id/btn_detect"-->
+<!--        android:layout_width="75dp"-->
+<!--        android:layout_height="75dp"-->
+<!--        android:layout_marginBottom="24dp"-->
+<!--        android:background="@drawable/round_button"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_detect"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/round_button"
-        android:textSize="24sp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#77DD77"
+        android:contentDescription="button detect"
+        app:backgroundTint="@color/white"
+        app:borderWidth="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@android:color/holo_blue_dark" />
 
-<!--    <TextView-->
+    <!--    <TextView-->
 <!--        android:id="@+id/textViewBtn"-->
 <!--        android:layout_width="0dp"-->
 <!--        android:layout_height="wrap_content"-->
@@ -202,21 +210,21 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#fff"
         android:text="\n\n\n"
-        app:cornerRadius="20dp"
+        android:background="@drawable/rounded"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_detection_result"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tv_detection_mode"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
         tools:itemCount="1"
         tools:listitem="@layout/rv_prediction_result" />
 
