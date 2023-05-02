@@ -7,6 +7,6 @@ import kotlinx.android.parcel.Parcelize
 data class Detection(
     val name: String?,
     val accuracy: Float?,
-//    val picture: Int?,
+    val picture: Int?,
     val detail: Int?
 ) : Parcelable

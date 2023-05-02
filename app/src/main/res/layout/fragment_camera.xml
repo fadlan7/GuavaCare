@@ -47,7 +47,7 @@
         android:id="@+id/iv_flash_light_mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="12dp"
         android:clickable="true"
         android:contentDescription="aaa"
@@ -226,7 +226,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         tools:itemCount="1"
-        tools:listitem="@layout/rv_prediction_result" />
+        tools:listitem="@layout/rv_prediction_guava_result" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group_progress"

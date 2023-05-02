@@ -26,13 +26,13 @@ class Classification(context: Context) {
         private const val IMAGE_STD = 255f
     }
 
-//    private lateinit var dataPicture: TypedArray
+    private lateinit var dataPicture: TypedArray
     private lateinit var dataDetail: TypedArray
     private val tfLiteModel = Interpreter(getModelByteBuffer(context.assets), Interpreter.Options())
-    private val dataName = context.resources.getStringArray(R.array.diseaseName)
+    private val dataName = context.resources.getStringArray(R.array.guavaDiseaseName)
 
     private fun getModelByteBuffer(assetManager: AssetManager): MappedByteBuffer {
-        val modelPath = "guava_disease.tflite"
+        val modelPath = "guava_disease2.tflite"
         val fileDescriptor = assetManager.openFd(modelPath)
         val inputStream = FileInputStream(fileDescriptor.fileDescriptor)
         val fileChannel = inputStream.channel
@@ -42,8 +42,8 @@ class Classification(context: Context) {
     }
 
     private fun prepare(context: Context) {
-//        dataPicture = context.resources.obtainTypedArray(R.array.leaves_picture)
-        dataDetail = context.resources.obtainTypedArray(R.array.detail_layout)
+        dataPicture = context.resources.obtainTypedArray(R.array.guavaDiseaseImage)
+        dataDetail = context.resources.obtainTypedArray(R.array.detail_guava_disease_layout)
     }
 
     fun recognizeTakenPicture(data: ByteArray, context: Context): ArrayList<Detection> {
@@ -134,7 +134,7 @@ class Classification(context: Context) {
             val detection = Detection(
                 dataName[position],
                 dataAcc[position] * 100,
-//                dataPicture.getResourceId(position, -1),
+                dataPicture.getResourceId(position, -1),
                 dataDetail.getResourceId(position, -1)
             )
             recognitions.add(detection)

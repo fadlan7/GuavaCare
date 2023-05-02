@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.fadlan.guavacare.R
-import com.fadlan.guavacare.databinding.RvPredictionResultBinding
+import com.fadlan.guavacare.databinding.RvPredictionGuavaResultBinding
 import com.fadlan.guavacare.model.Detection
 //import kotlinx.android.sy
 
@@ -32,7 +32,7 @@ class PredictAdapter(private val resultDetection: ArrayList<Detection>)  : Recyc
 //    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
-        val binding = RvPredictionResultBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = RvPredictionGuavaResultBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return RecyclerViewHolder(binding)
     }
 
@@ -45,7 +45,7 @@ class PredictAdapter(private val resultDetection: ArrayList<Detection>)  : Recyc
     override fun onBindViewHolder(holder: RecyclerViewHolder, position: Int) =
         holder.bind(resultDetection[position])
 
-    inner class RecyclerViewHolder(private val binding: RvPredictionResultBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class RecyclerViewHolder(private val binding: RvPredictionGuavaResultBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(data: Detection) {
             binding.apply {
                 tvNameResult.text = "${data.name}"

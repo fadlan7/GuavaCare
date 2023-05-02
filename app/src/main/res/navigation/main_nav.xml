@@ -13,10 +13,35 @@
         <action
             android:id="@+id/action_homeFragment_to_cameraFragment"
             app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cameraLeafFragment"
+            app:destination="@id/cameraLeafFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listGuavaDiseaseFragment"
+            app:destination="@id/listGuavaDiseaseFragment" />
     </fragment>
     <fragment
         android:id="@+id/cameraFragment"
         android:name="com.fadlan.guavacare.CameraFragment"
         android:label="fragment_camera"
         tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/cameraLeafFragment"
+        android:name="com.fadlan.guavacare.CameraLeafFragment"
+        android:label="fragment_camera_leaf"
+        tools:layout="@layout/fragment_camera_leaf" />
+    <fragment
+        android:id="@+id/listGuavaDiseaseFragment"
+        android:name="com.fadlan.guavacare.ListGuavaDiseaseFragment"
+        android:label="fragment_list_guava_disease"
+        tools:layout="@layout/fragment_list_guava_disease" >
+        <action
+            android:id="@+id/action_listGuavaDiseaseFragment_to_guavaDiseaseDetailFragment"
+            app:destination="@id/guavaDiseaseDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guavaDiseaseDetailFragment"
+        android:name="com.fadlan.guavacare.GuavaDiseaseDetailFragment"
+        android:label="fragment_guava_disease_detail"
+        tools:layout="@layout/fragment_guava_disease_detail" />
 </navigation>

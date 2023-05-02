@@ -37,6 +37,14 @@ class HomeFragment : Fragment(), View.OnClickListener {
         binding.btnDeteksi.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_cameraFragment)
         )
+
+        binding.btnDeteksiDaun.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_cameraLeafFragment)
+        )
+
+        binding.btnJenisPenyakit.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_listGuavaDiseaseFragment)
+        )
     }
 
     override fun onDestroy() {
@@ -46,9 +54,18 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when(v){
+
             binding.btnDeteksi -> NavHostFragment
                 .findNavController(this)
                 .navigate(R.id.action_homeFragment_to_cameraFragment)
+
+            binding.btnDeteksiDaun -> NavHostFragment
+                .findNavController(this)
+                .navigate(R.id.action_homeFragment_to_cameraLeafFragment)
+
+            binding.btnJenisPenyakit -> NavHostFragment
+                .findNavController(this)
+                .navigate(R.id.action_homeFragment_to_listGuavaDiseaseFragment)
         }
     }
 

@@ -1,49 +1,72 @@
 <resources>
     <string name="app_name">GuavaCare</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="deteksi">Deteksi</string>
 
-    <string-array name="diseaseName">
+    <string-array name="guavaDiseaseName">
         <item><b>Guava healthy</b></item>
-        <item><b>Leaf healthy</b></item>
         <item><b>Phytopthora</b></item>
-        <item><b>Red rust</b></item>
         <item><b>Scab</b></item>
         <item><b> Styler end Root</b></item>
     </string-array>
+    
+    <string name="phytophthora_cause">Buah yang terinfeksi busuk Phytophthora tampak berwarna coklat keabu-abuan dan basah kuyup dengan bagian tengah berwarna hitam keabu-abuan. Penyakit ini muncul dalam bentuk pertumbuhan miselium putih bertepung di atas buah.</string>
+    <string name="phytophthora_cause2">Jamur yang menginfeksi buah dapat bersumber dari tanah, batang yang sakit kanker batang, buah yang sakit, dan tumbuhan inang lain. Phytophthora palmivora terutama bertahan dalam tanah. Dari sini jamur dapat terbawa oleh percikan air hujan ke buah-buah yang dekat tanah. Setelah mengadakan infeksi, dalam waktu beberapa hari jamur pada buah sudah dapat menghasilkan banyak sporangium (bagian tubuh jamur yang berfungsi sebagai tempat pembentukan spora). Sporangium ini dapat terbawa oleh percikan air, atau oleh angin, dan mencapai buah yang lebih tinggi.</string>
+    <string name="phytophthora_treatment">Memetik semua buah busuk yang dilakukan bersamaan dengan pemangkasan ataupun saat panen, kemudian dibenamkan ke dalam tanah sedalam 30 cm.</string>
+    <string name="phytophthora_treatment2">Pengaturan kelembaban kebun bisa dilakukan dengan memperbaiki drainase, memangkas tanaman dan pohon pelindung dengan teratur, dan dengan mengendalikan gulma. </string>
+    <string name="phytophthora_treatment3">Pemberian Dithane efektif dalam mengendalikan penyakit</string>
 
-    <string-array name="detail_layout">
-        <item>@layout/fragment_home</item>
-<!--        <item>@layout/apple_black_rot_detail</item>-->
-<!--        <item>@layout/apple_cedar_rust_detail</item>-->
-<!--        <item>@layout/apple_healthy_detail</item>-->
-<!--        <item>@layout/cherry_powdery_mildew_detail</item>-->
-<!--        <item>@layout/cherry_healthy_detail</item>-->
-<!--        <item>@layout/corn_cercospora_leaf_spot_detail</item>-->
-<!--        <item>@layout/corn_common_rust_detail</item>-->
-<!--        <item>@layout/corn_northern_leaf_blight_detail</item>-->
-<!--        <item>@layout/corn_healthy_detail</item>-->
-<!--        <item>@layout/grape_black_rot_detail</item>-->
-<!--        <item>@layout/grape_esca_black_measles_detail</item>-->
-<!--        <item>@layout/grape_leaf_blight_detail</item>-->
-<!--        <item>@layout/grape_healthy_detail</item>-->
-<!--        <item>@layout/pepper_bacterial_spot_detail</item>-->
-<!--        <item>@layout/pepper_healthy_detail</item>-->
-<!--        <item>@layout/potato_early_blight_detail</item>-->
-<!--        <item>@layout/potato_late_blight_detail</item>-->
-<!--        <item>@layout/potato_healthy_detail</item>-->
-<!--        <item>@layout/strawberry_leaf_scorch_detail</item>-->
-<!--        <item>@layout/strawberry_healthy_detail</item>-->
-<!--        <item>@layout/tomato_bacterial_spot_detail</item>-->
-<!--        <item>@layout/tomato_early_blight_detail</item>-->
-<!--        <item>@layout/tomato_late_blight_detail</item>-->
-<!--        <item>@layout/tomato_leaf_mold_detail</item>-->
-<!--        <item>@layout/tomato_septoria_leaf_spot_detail</item>-->
-<!--        <item>@layout/tomato_spider_mites_detail</item>-->
-<!--        <item>@layout/tomato_target_spot_detail</item>-->
-<!--        <item>@layout/tomato_yellow_leaf_curl_virus_detail</item>-->
-<!--        <item>@layout/tomato_mosaic_virus_detail</item>-->
-<!--        <item>@layout/tomato_healthy_detail</item>-->
+    <string name="scab_cause">Scab disebabkan oleh jamur yang memiliki gejala bulat telur, gabus, dan kerusakan berbentuk bulat pada permukaan buah jambu biji. Kerusakan ini mempengaruhi daging di bawahnya, mengurangi kualitas buah dan nilai produksi Jamur terutama mempengaruhi buah–buahan mentah, yang menciptakan gelap dan kerusakan kudis coklat berdiameter 2–4mm. Kulit buah di bawah proses pematangan berubah menjadi lunak dan menghiasi coklat muda hingga coklat tua. Kelembaban relatif tinggi merusak buah-buahan di permukaan tanah yang ditutupi dengan dedaunan tebal. Buah-buahan yang jatuh telah sangat dirugikan.</string>
+    <string name="scab_treatment">Pertahankan jarak tanam yang direkomendasikan (5–6m × 5–6m).</string>
+    <string name="scab_treatment2">Buang cabang yang berlebih dan rusak setelah panen</string>
+    <string name="scab_treatment3">Tutupi buah-buahan dengan kertas atau kantong plastik dengan satu sisi terbuka di panggung kecil</string>
+    <string name="scab_treatment4">Kendalikan serangga kepik Helopeltis Spp untuk mengurangi inisiasi penyakit</string>
+
+    <string name="styler_cause">Stylar end root atau disebut busuk pangkal buah mengalami gejala kerusakan pada ujung buah yang kemudian membusuk yang disebabkan oleh patogen alternaria citri. Buah yang tidak sehat atau rusak rentan terhadap infeksi. Infeksi dapat terjadi saat buah masih berada di pohon. Dan yang terkena kelembapan yang lebih tinggi menjadi rusak yang paling parah.</string>
+    <string name="styler_treatment">Penyakit dapat dicegah dengan tanah berdrainase baik, banyak sinar matahari, pupuk sesekali, air yang cukup, dan pengendalian hama.</string>
+
+
+    <string-array name="guavaDiseaseImage">
+        <item>@drawable/guava_healthy</item>
+        <item>@drawable/phytopthora</item>
+        <item>@drawable/scab1</item>
+        <item>@drawable/styler_end_root1</item>
+    </string-array>
+
+    <string-array name="guavaDiseaseImageDetail">
+        <item>@drawable/guava_healthy</item>
+        <item>@drawable/guava_healthy2</item>
+        <item>@drawable/phytopthora</item>
+        <item>@drawable/phytopthora2</item>
+        <item>@drawable/scab1</item>
+        <item>@drawable/scab2</item>
+        <item>@drawable/styler_end_root1</item>
+        <item>@drawable/styler_end_root2</item>
+    </string-array>
+
+    <string-array name="detail_guava_disease_layout">
+        <item>@layout/guava_healthy_detail_screen</item>
+        <item>@layout/guava_phytopthora_detail_screen</item>
+        <item>@layout/guava_scab_detail_screen</item>
+        <item>@layout/guava_styler_detail_screen</item>
+    </string-array>
+
+    <string name="rust_cause">Penyakit ini disebabkan oleh alga Cephaleuros virescens pada daun, bunga, buah, ranting dan batang. Pada permukaan atas daun ditumbuhi talus yang tegak, dengan filamen berwarna kuning hingga merah. Daun di infeksi pada bagian tepi, pinggir atau seringkali pada area dekat tulang daun. Penyebabnya juga disebabkan oleh curah hujan yang tinggi, kelembapan yang berlebihan dan suhu hangat. </string>
+    <string name="rust_treatment">Pengendalian karat merah dapat dilakukan dengan penyemprotan tembaga oksiklorida (0.3%) sebanyak 3 sampai 4 kali dengan interval 15 hari hingga gejala membaik. Selain itu jarak tanam yang tidak rapat dapat mengurangi penyebaran red rust / karat merah.</string>
+
+    <string-array name="leafDiseaseName">
+        <item><b>Leaf healthy</b></item>
+        <item><b>Red rust</b></item>
+    </string-array>
+
+    <string-array name="leafDiseaseImage">
+        <item>@drawable/leaf_healthy</item>
+        <item>@drawable/leaf_healthy2</item>
+        <item>@drawable/rust</item>
+        <item>@drawable/rust2</item>
+    </string-array>
+
+    <string-array name="detail_leaf_disease_layout">
+        <item>@layout/leaf_healthy_detail_screen</item>
+        <item>@layout/leaf_rust_detail_screen</item>
     </string-array>
 </resources>
