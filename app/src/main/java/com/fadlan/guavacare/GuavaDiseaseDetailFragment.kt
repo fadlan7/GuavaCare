@@ -29,6 +29,7 @@ class GuavaDiseaseDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
         actionBar()
+        selectedGuavaDisease()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -40,7 +41,7 @@ class GuavaDiseaseDetailFragment : Fragment() {
         if (itemId == android.R.id.home) requireActivity().onBackPressed()
     }
 
-    private fun selectedGuavaDisease(data: GuavaDisease){
+    private fun selectedGuavaDisease(){
         if (arguments != null){
             val diseaseName = arguments?.getString(EXTRA_DISEASE_NAME).toString()
             val diseaseImage = arguments?.getInt(EXTRA_DISEASE_IMAGE, 0)
@@ -55,19 +56,13 @@ class GuavaDiseaseDetailFragment : Fragment() {
                 }
             }
         }
-        val bundle = Bundle().apply {
-            putString(EXTRA_DISEASE_NAME, data.diseaseName)
-            data.diseaseImage?.let { putInt(EXTRA_DISEASE_IMAGE, it) }
-            data.diseaseDetail?.let { putInt(EXTRA_DISEASE_DETAIL, it) }
-        }
-        NavHostFragment.findNavController(this).navigate(R.id.action_listGuavaDiseaseFragment_to_guavaDiseaseDetailFragment, bundle)
     }
 
     private fun actionBar() {
         (activity as AppCompatActivity?)?.supportActionBar?.apply {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
-            title = EXTRA_DISEASE_NAME
+            title = arguments?.getString(EXTRA_DISEASE_NAME).toString()
         }
     }
 

@@ -89,7 +89,7 @@ class ListGuavaDiseaseFragment : Fragment() {
         (activity as AppCompatActivity?)?.supportActionBar?.apply {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
-            title = "Daftar Penyakit"
+            title = "Daftar Penyakit Jambu"
         }
     }
 }
