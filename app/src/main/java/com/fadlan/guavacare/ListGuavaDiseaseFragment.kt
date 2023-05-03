@@ -14,16 +14,21 @@ import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_D
 import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_IMAGE
 import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_NAME
 import com.fadlan.guavacare.adapter.GuavaDiseaseAdapter
+import com.fadlan.guavacare.adapter.LeafGuavaDiseaseAdapter
 import com.fadlan.guavacare.model.factory.GuavaDiseaseLists.addDisease
 import com.fadlan.guavacare.databinding.FragmentListGuavaDiseaseBinding
 import com.fadlan.guavacare.model.GuavaDisease
+import com.fadlan.guavacare.model.LeafGuavaDisease
 import com.fadlan.guavacare.model.factory.GuavaDiseaseLists.guavaDiseases
+import com.fadlan.guavacare.model.factory.LeafGuavaDiseaseLists.addLeafDisease
+import com.fadlan.guavacare.model.factory.LeafGuavaDiseaseLists.leafGuavaDiseases
 
 class ListGuavaDiseaseFragment : Fragment() {
 
     private var _binding: FragmentListGuavaDiseaseBinding? = null
     private val binding get() = _binding!!
     private var guavaDiseaseAdapter = GuavaDiseaseAdapter(guavaDiseases)
+    private var leafGuavaDiseaseAdapter = LeafGuavaDiseaseAdapter(leafGuavaDiseases)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,7 +44,9 @@ class ListGuavaDiseaseFragment : Fragment() {
         actionBar()
         setHasOptionsMenu(true)
         addDisease(resources)
+        addLeafDisease(resources)
         recyclerView()
+        leafRecyclerView()
     }
 
     fun recyclerView(){
@@ -62,9 +69,30 @@ class ListGuavaDiseaseFragment : Fragment() {
         }
     }
 
+    private fun leafRecyclerView(){
+        binding.apply {
+            rvListLeafDiseases.layoutManager = GridLayoutManager(activity, 2)
+
+            leafGuavaDiseaseAdapter= LeafGuavaDiseaseAdapter(leafGuavaDiseases)
+            rvListLeafDiseases.adapter=leafGuavaDiseaseAdapter
+
+            leafGuavaDiseaseAdapter.notifyDataSetChanged()
+            rvListLeafDiseases.setHasFixedSize(true)
+
+            leafGuavaDiseaseAdapter.setOnItemClickCallback(object :
+                LeafGuavaDiseaseAdapter.OnItemClickCallBack{
+                override fun onItemClicked(data: LeafGuavaDisease) {
+                    selectedLeafGuavaDisease(data)
+                }
+            }
+            )
+        }
+    }
+
     override fun onStop() {
         super.onStop()
         addDisease(resources).removeAll(guavaDiseases.toSet())
+        addLeafDisease(resources).removeAll(leafGuavaDiseases.toSet())
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -77,6 +105,15 @@ class ListGuavaDiseaseFragment : Fragment() {
     }
 
     private fun selectedGuavaDisease(data:GuavaDisease){
+        val bundle = Bundle().apply {
+            putString(EXTRA_DISEASE_NAME, data.diseaseName)
+            data.diseaseImage?.let { putInt(EXTRA_DISEASE_IMAGE, it) }
+            data.diseaseDetail?.let { putInt(EXTRA_DISEASE_DETAIL, it) }
+        }
+        NavHostFragment.findNavController(this).navigate(R.id.action_listGuavaDiseaseFragment_to_guavaDiseaseDetailFragment, bundle)
+    }
+
+    private fun selectedLeafGuavaDisease(data:LeafGuavaDisease){
         val bundle = Bundle().apply {
             putString(EXTRA_DISEASE_NAME, data.diseaseName)
             data.diseaseImage?.let { putInt(EXTRA_DISEASE_IMAGE, it) }
