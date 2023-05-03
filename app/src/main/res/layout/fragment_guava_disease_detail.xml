@@ -4,7 +4,6 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:background="#C5E1A5"
 tools:context=".GuavaDiseaseDetailFragment">
 
 <!-- TODO: Update blank fragment layout -->
@@ -38,10 +37,14 @@ tools:context=".GuavaDiseaseDetailFragment">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_name_received"
-        app:siBorderColor="#4CAF50"
         app:siBorderWidth="4dp"
         app:siRadius="4dp"
         app:siSquare="true" />
+
+<!--    app:siBorderColor="#4CAF50"-->
+<!--    app:siBorderWidth="4dp"-->
+<!--    app:siRadius="4dp"-->
+<!--    app:siSquare="true" />-->
 
     <ViewStub
         android:id="@+id/vs_detail_received"

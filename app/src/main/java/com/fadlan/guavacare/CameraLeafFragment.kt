@@ -20,16 +20,18 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.toBitmap
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_DETAIL
+import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_IMAGE
+import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_NAME
 import com.fadlan.guavacare.adapter.PredictAdapter
 import com.fadlan.guavacare.adapter.PredictLeafAdapter
-import com.fadlan.guavacare.databinding.FragmentCameraBinding
 import com.fadlan.guavacare.databinding.FragmentCameraLeafBinding
 import com.fadlan.guavacare.manager.PermissionManager
 import com.fadlan.guavacare.model.Detection
 import com.fadlan.guavacare.preference.CameraPreference
 import com.fadlan.guavacare.viewModel.CameraLeafViewModel
-import com.fadlan.guavacare.viewModel.CameraViewModel
 import com.priyankvasa.android.cameraviewex.Modes
 
 
@@ -417,9 +419,9 @@ class CameraLeafFragment : Fragment(), View.OnClickListener {
         binding.rvDetectionResult.adapter = resultAdapter
         resultAdapter.notifyDataSetChanged()
         binding.rvDetectionResult.setHasFixedSize(true)
-//        resultAdapter.setOnItemClickCallback(object : PredictAdapter.OnItemClickCallBack {
-//            override fun onItemClicked(data: Detection) = setSelectedPlantDisease(data)
-//        })
+        resultAdapter.setOnItemClickCallback(object : PredictAdapter.OnItemClickCallBack {
+            override fun onItemClicked(data: Detection) = selectedLeafDisease(data)
+        })
     }
 
     @SuppressLint("MissingPermission")
@@ -445,16 +447,16 @@ class CameraLeafFragment : Fragment(), View.OnClickListener {
     private fun showDetectionItems(detectionItems: ArrayList<Detection>) =
         resultAdapter.setResultDetectionData(detectionItems)
 
-//    private fun setSelectedPlantDisease(data: Detection) {
-//        val mBundle = Bundle().apply {
-//            putString(EXTRA_NAME, data.name)
-//            data.picture?.let { putInt(EXTRA_PICTURE, it) }
-//            data.detail?.let { putInt(EXTRA_DETAIL, it) }
-//        }
-//        NavHostFragment
-//            .findNavController(this)
-//            .navigate(R.id.action_cameraFragment_to_listDiseasesDetailFragment, mBundle)
-//    }
+    private fun selectedLeafDisease(data: Detection) {
+        val mBundle = Bundle().apply {
+            putString(EXTRA_DISEASE_NAME, data.name)
+            data.picture?.let { putInt(EXTRA_DISEASE_IMAGE, it) }
+            data.detail?.let { putInt(EXTRA_DISEASE_DETAIL, it) }
+        }
+        NavHostFragment
+            .findNavController(this)
+            .navigate(R.id.action_cameraLeafFragment_to_guavaDiseaseDetailFragment, mBundle)
+    }
 
 //    private fun addDetectionHistory() {
 //        val items = cameraViewModel.getDetectionPicture().value

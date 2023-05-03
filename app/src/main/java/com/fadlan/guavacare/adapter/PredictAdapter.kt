@@ -61,7 +61,7 @@ class PredictAdapter(private val resultDetection: ArrayList<Detection>)  : Recyc
         }
     }
 
-    interface OnItemClickCallBack {
-        fun onItemClicked(data: Detection)
+    interface OnItemClickCallBack : PredictLeafAdapter.OnItemClickCallBack {
+        override fun onItemClicked(data: Detection)
     }
 }

@@ -33,7 +33,11 @@
         android:id="@+id/cameraLeafFragment"
         android:name="com.fadlan.guavacare.CameraLeafFragment"
         android:label="fragment_camera_leaf"
-        tools:layout="@layout/fragment_camera_leaf" />
+        tools:layout="@layout/fragment_camera_leaf" >
+        <action
+            android:id="@+id/action_cameraLeafFragment_to_guavaDiseaseDetailFragment"
+            app:destination="@id/guavaDiseaseDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/listGuavaDiseaseFragment"
         android:name="com.fadlan.guavacare.ListGuavaDiseaseFragment"

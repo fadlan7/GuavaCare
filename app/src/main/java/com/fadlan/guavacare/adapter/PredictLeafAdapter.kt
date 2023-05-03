@@ -13,7 +13,7 @@ import com.fadlan.guavacare.model.Detection
 class PredictLeafAdapter(private val resultDetection: ArrayList<Detection>)  : RecyclerView.Adapter<PredictLeafAdapter.RecyclerViewHolder>(){
     private lateinit var onItemClickDetail: OnItemClickCallBack
 
-    fun setOnItemClickCallback(onItemClickCallBack: OnItemClickCallBack) {
+    fun setOnItemClickCallback(onItemClickCallBack: PredictAdapter.OnItemClickCallBack) {
         this.onItemClickDetail = onItemClickCallBack
     }
 
