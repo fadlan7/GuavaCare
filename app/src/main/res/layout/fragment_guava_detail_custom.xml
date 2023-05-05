@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".GuavaDetailFragmentCustom">
+
+<!-- TODO: Update blank fragment layout -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:elevation="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_ads_click_24"
+        app:layout_constraintBottom_toTopOf="@id/lineOnCarousel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:autoPlay="true"
+        app:fillColor="#FFFFFFFF"
+        app:indicatorGravity="top|center"
+        app:layout_constraintDimensionRatio="H, 1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="6000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
+    <View
+        android:id="@+id/lineOnCarousel"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="@id/carouselView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

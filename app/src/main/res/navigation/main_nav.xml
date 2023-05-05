@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_homeFragment_to_listGuavaDiseaseFragment"
             app:destination="@id/listGuavaDiseaseFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_guava_List_Custom"
+            app:destination="@id/guava_List_Custom" />
     </fragment>
     <fragment
         android:id="@+id/cameraFragment"
@@ -52,4 +55,9 @@
         android:name="com.fadlan.guavacare.GuavaDiseaseDetailFragment"
         android:label="fragment_guava_disease_detail"
         tools:layout="@layout/fragment_guava_disease_detail" />
+    <fragment
+        android:id="@+id/guava_List_Custom"
+        android:name="com.fadlan.guavacare.Guava_List_Custom"
+        android:label="fragment_guava__list__custom"
+        tools:layout="@layout/fragment_guava__list__custom" />
 </navigation>

@@ -95,6 +95,12 @@ class ListGuavaDiseaseFragment : Fragment() {
         addLeafDisease(resources).removeAll(leafGuavaDiseases.toSet())
     }
 
+//    override fun onResume() {
+//        super.onResume()
+//        addDisease(resources).addAll(guavaDiseases.toSet())
+//        addLeafDisease(resources).addAll(leafGuavaDiseases.toSet())
+//    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         onNavigateUp(item.itemId)
         return super.onOptionsItemSelected(item)
