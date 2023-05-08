@@ -14,10 +14,14 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
+<!--    <style name="Theme.NoActionBar">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
 
-    <style name="Theme"></style>
+    <style name="DetailDesc">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:justificationMode" tools:targetApi="o">inter_word</item>
+    </style>
 </resources>

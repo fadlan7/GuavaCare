@@ -45,10 +45,6 @@ class HomeFragment : Fragment(), View.OnClickListener {
         binding.btnJenisPenyakit.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_listGuavaDiseaseFragment)
         )
-
-        binding.btnJenisCustom.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_guava_List_Custom)
-        )
     }
 
     override fun onDestroy() {
@@ -71,9 +67,6 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 .findNavController(this)
                 .navigate(R.id.action_homeFragment_to_listGuavaDiseaseFragment)
 
-            binding.btnJenisCustom -> NavHostFragment
-                .findNavController(this)
-                .navigate(R.id.action_homeFragment_to_guava_List_Custom)
         }
     }
 
