@@ -70,6 +70,11 @@ class HomeFragment : Fragment(), View.OnClickListener {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
+    }
+
     private fun setActionBar() {
 //        val drawable = ResourcesCompat.getDrawable(resources,
 //            R.drawable.ic_launcher_foreground, null)
