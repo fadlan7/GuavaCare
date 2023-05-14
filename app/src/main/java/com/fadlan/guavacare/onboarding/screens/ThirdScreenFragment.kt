@@ -27,23 +27,18 @@ class ThirdScreenFragment : Fragment() {
 
         binding.finish.setOnClickListener{
             findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
-            onBoardingFinished()
+            onBoardingIsFinished()
         }
 
         return binding.root
     }
 
-    private fun onBoardingFinished(){
-        val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-        val editor = sharedPref.edit()
-        editor.putBoolean("Finished", true)
-        editor.apply()
+    private fun onBoardingIsFinished(){
 
-//        val context = activity
-//        val sharedPref = context?.getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-//        val editor = sharedPref?.edit()
-//        editor?.putBoolean("Finished", true)
-//        editor?.apply()
+        val sharedPreferences = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putBoolean("finished",true)
+        editor.apply()
     }
 
 }

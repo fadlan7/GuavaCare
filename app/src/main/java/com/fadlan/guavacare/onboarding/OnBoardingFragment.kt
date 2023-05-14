@@ -11,8 +11,9 @@ import com.fadlan.guavacare.databinding.FragmentViewPagerBinding
 import com.fadlan.guavacare.onboarding.screens.FirstScreenFragment
 import com.fadlan.guavacare.onboarding.screens.SecondScreenFragment
 import com.fadlan.guavacare.onboarding.screens.ThirdScreenFragment
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 
-class ViewPagerFragment : Fragment() {
+class OnBoardingFragment : Fragment() {
 
     private var _binding: FragmentViewPagerBinding? = null
     private val binding get() = _binding!!
@@ -37,6 +38,8 @@ class ViewPagerFragment : Fragment() {
         )
 
         binding.viewPager.adapter = adapter
+
+        binding.dotsIndicator.attachTo(binding.viewPager)
 
         return binding.root
     }

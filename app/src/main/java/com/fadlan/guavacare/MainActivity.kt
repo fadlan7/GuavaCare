@@ -20,6 +20,7 @@ import android.widget.Toast
 import android.widget.Toolbar
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -33,6 +34,7 @@ import kotlinx.coroutines.*
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,10 +43,4 @@ class MainActivity : AppCompatActivity() {
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     }
-
-//    override fun onBackPressed() {
-//        super.onBackPressed()
-//        val detectionHistoryHelper = DetectionHistoryHelper.getInstance(applicationContext)
-//        if (detectionHistoryHelper.open().equals(true)) detectionHistoryHelper.close()
-//    }
 }
