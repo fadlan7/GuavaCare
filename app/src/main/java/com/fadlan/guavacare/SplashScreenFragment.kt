@@ -47,6 +47,6 @@ class SplashScreenFragment : Fragment() {
                 }
             }
 
-        }, 3000)
+        }, 2000)
     }
 }
