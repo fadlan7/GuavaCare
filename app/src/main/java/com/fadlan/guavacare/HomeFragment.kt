@@ -21,9 +21,6 @@ class HomeFragment : Fragment(), View.OnClickListener {
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-//        requireActivity().onBackPressedDispatcher.addCallback(this){
-//
-//        }
         return binding.root
     }
 

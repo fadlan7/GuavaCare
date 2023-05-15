@@ -1,5 +1,6 @@
 package com.fadlan.guavacare
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.os.Handler
@@ -13,35 +14,19 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreenFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        Handler(Looper.getMainLooper()).postDelayed({
-//            if (onBoardingIsFinished()){
-//                lifecycleScope.launchWhenResumed {
-//                    findNavController().navigate(R.id.navigate_splashScreenFragment_to_homeFragment)
-//                }
-//            }else{
-//                lifecycleScope.launchWhenResumed {
-//                    findNavController().navigate(R.id.action_splashScreenFragment_to_onboardingFragment)
-//                }
-//            }
-//
-//        }, 3000)
 
         val view = inflater.inflate(R.layout.fragment_splash_screen, container, false)
         (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
 
         return view
     }
-
-//    private fun onBoardingIsFinished(): Boolean{
-//        val sharedPreferences = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-//        return sharedPreferences.getBoolean("finished",false)
-//    }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -64,5 +49,4 @@ class SplashScreenFragment : Fragment() {
 
         }, 3000)
     }
-
 }

@@ -8,12 +8,16 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/dotted_line.xml" value="0.1" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/ic_baseline_flash_auto_24.xml" value="0.1005" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/ic_baseline_flash_off_24.xml" value="0.1005" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/ic_book.xml" value="0.1575" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/ic_guava.xml" value="0.2" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/ic_leaf.xml" value="0.1" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/round_button.xml" value="0.21" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/rounded.xml" value="0.2095" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout-v26/guava_phytopthora_detail__screen.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout-v26/leaf_rust_detail_screen.xml" value="0.1" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/activity_main.xml" value="0.12582781456953643" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/activity_test.xml" value="0.5" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/app_bar.xml" value="0.5" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_camera.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_camera_leaf.xml" value="0.14895833333333333" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_first_screen.xml" value="0.209375" />
@@ -21,7 +25,7 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_detail_custom.xml" value="0.12962962962962962" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_detail.xml" value="0.25" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_detail_custom.xml" value="0.209375" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_list_guava_disease.xml" value="0.25" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_list_guava_disease_custom.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_second_screen.xml" value="0.209375" />
