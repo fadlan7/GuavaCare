@@ -6,11 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
-import androidx.viewpager2.widget.ViewPager2
 import com.fadlan.guavacare.R
-import com.fadlan.guavacare.databinding.FragmentFirstScreenBinding
-import com.fadlan.guavacare.databinding.FragmentSecondScreenBinding
 import com.fadlan.guavacare.databinding.FragmentThirdScreenBinding
 
 class ThirdScreenFragment : Fragment() {
@@ -23,14 +21,15 @@ class ThirdScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentThirdScreenBinding.inflate(inflater, container, false)
+        val view =  inflater.inflate(R.layout.fragment_third_screen, container, false)
+        val finish = view.findViewById<TextView>(R.id.finish)
 
-        binding.finish.setOnClickListener{
-            findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
+        finish.setOnClickListener{
+            findNavController().navigate(R.id.action_onboardingFragment_to_homeFragment)
             onBoardingIsFinished()
         }
 
-        return binding.root
+        return view
     }
 
     private fun onBoardingIsFinished(){

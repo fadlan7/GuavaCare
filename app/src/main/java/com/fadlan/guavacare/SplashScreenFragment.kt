@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.fadlan.guavacare.databinding.FragmentSplashScreenBinding
 
 
 class SplashScreenFragment : Fragment() {
@@ -20,25 +19,50 @@ class SplashScreenFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_splash_screen, container, false)
+//        Handler(Looper.getMainLooper()).postDelayed({
+//            if (onBoardingIsFinished()){
+//                lifecycleScope.launchWhenResumed {
+//                    findNavController().navigate(R.id.navigate_splashScreenFragment_to_homeFragment)
+//                }
+//            }else{
+//                lifecycleScope.launchWhenResumed {
+//                    findNavController().navigate(R.id.action_splashScreenFragment_to_onboardingFragment)
+//                }
+//            }
+//
+//        }, 3000)
 
+        val view = inflater.inflate(R.layout.fragment_splash_screen, container, false)
         (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
 
+        return view
+    }
+
+//    private fun onBoardingIsFinished(): Boolean{
+//        val sharedPreferences = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+//        return sharedPreferences.getBoolean("finished",false)
+//    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+
+        fun onBoardingIsFinished(): Boolean{
+            val sharedPreferences = context.getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+            return sharedPreferences.getBoolean("finished",false)
+        }
 
         Handler(Looper.getMainLooper()).postDelayed({
             if (onBoardingIsFinished()){
-                findNavController().navigate(R.id.navigate_splashScreenFragment_to_homeFragment)
+                lifecycleScope.launchWhenResumed {
+                    findNavController().navigate(R.id.navigate_splashScreenFragment_to_homeFragment)
+                }
             }else{
-                findNavController().navigate(R.id.action_splashScreenFragment_to_viewPagerFragment)
+                lifecycleScope.launchWhenResumed {
+                    findNavController().navigate(R.id.action_splashScreenFragment_to_onboardingFragment)
+                }
             }
 
         }, 3000)
-
-       return view
     }
 
-    private fun onBoardingIsFinished(): Boolean{
-        val sharedPreferences = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
-        return sharedPreferences.getBoolean("finished",false)
-    }
 }
