@@ -32,7 +32,7 @@ class LeafClassification(context: Context) {
     private val dataName = context.resources.getStringArray(R.array.leafDiseaseName)
 
     private fun getModelByteBuffer(assetManager: AssetManager): MappedByteBuffer {
-        val modelPath = "leaf_guava_disease2.tflite"
+        val modelPath = "leaf_guava_disease_0drop.tflite"
         val fileDescriptor = assetManager.openFd(modelPath)
         val inputStream = FileInputStream(fileDescriptor.fileDescriptor)
         val fileChannel = inputStream.channel

@@ -50,15 +50,24 @@
         <item>@layout/guava_styler_detail_screen</item>
     </string-array>
 
-    <string name="rust_cause">Penyakit ini disebabkan oleh alga Cephaleuros virescens pada daun, bunga, buah, ranting dan batang. Pada permukaan atas daun ditumbuhi talus yang tegak, dengan filamen berwarna kuning hingga merah. Daun di infeksi pada bagian tepi, pinggir atau seringkali pada area dekat tulang daun. Penyebabnya juga disebabkan oleh curah hujan yang tinggi, kelembapan yang berlebihan dan suhu hangat. </string>
-    <string name="rust_treatment">Pengendalian karat merah dapat dilakukan dengan penyemprotan tembaga oksiklorida (0.3%) sebanyak 3 sampai 4 kali dengan interval 15 hari hingga gejala membaik. Selain itu jarak tanam yang tidak rapat dapat mengurangi penyebaran red rust / karat merah.</string>
 
     <string-array name="leafDiseaseName">
+        <item><b>Dot</b></item>
         <item><b>Leaf healthy</b></item>
         <item><b>Red rust</b></item>
     </string-array>
 
+    <string name="rust_cause">Penyakit ini disebabkan oleh alga Cephaleuros virescens pada daun, bunga, buah, ranting dan batang. Pada permukaan atas daun ditumbuhi talus yang tegak, dengan filamen berwarna kuning hingga merah. Daun di infeksi pada bagian tepi, pinggir atau seringkali pada area dekat tulang daun. Penyebabnya juga disebabkan oleh curah hujan yang tinggi, kelembapan yang berlebihan dan suhu hangat. </string>
+    <string name="rust_treatment">Pengendalian karat merah dapat dilakukan dengan penyemprotan tembaga oksiklorida (0.3%) sebanyak 3 sampai 4 kali dengan interval 15 hari hingga gejala membaik. Selain itu jarak tanam yang tidak rapat dapat mengurangi penyebaran red rust / karat merah.</string>
+
+    <string name="dot_cause">Dot / Daun berlubang disebabkan oleh ulat kantung (Lepidoptera: Psychidae), ulat kantung memakan daun muda terutama pada bagian bawah daun, sehingga mengakibatkan daun berlubang dan kering. Gejala kerusakan pada daun disebabkan aktivitas makan larva pada lapisan epidermis bawah dan jaringan mesofil dengan menyisakan epidermis atasnya mengakibatkan window panning. Sisa epidermis atas tersebut lalu mengering dan menyisakan tulang daun </string>
+    <string name="dot_treatment"></string>
+    <string name="dot_treatment2">Biologis: pemanfaatan musuh alami predator Sycanus sp. (Hemiptera: Reduviidae) dan Eocanthecona furcellata (Hemiptera: Pentatomidae) serta parasitoid ulat Brachimeria lasus (Hymenoptera: Chalcididae)</string>
+    <string name="dot_treatment3">Mekanik: pemangkasan daun yang terserang oleh ulat kantung, pemanfaatan perangkap cahaya untuk menangkap imago jantan dari ulat kantung</string>
+    <string name="dot_treatment4">Kimiawi: dilakukan jika populasi sudah melewati ambang batas. Aplikasi dapat dilakukan dengan penyemprotan secara langsung atau injeksi/infus akar. Bahan aktif yang direkomendasikan yaitu abakmektin, abakmektin+sipermetrin, deltametrin, diazinon, kloramtiniliprol, dan lain-lain.</string>
+
     <string-array name="leafDiseaseImage">
+        <item>@drawable/dot</item>
         <item>@drawable/leaf_healthy</item>
         <item>@drawable/rust</item>
     </string-array>
@@ -71,6 +80,7 @@
     </string-array>
 
     <string-array name="detail_leaf_disease_layout">
+        <item>@layout/leaf_dot_detail_screen</item>
         <item>@layout/leaf_healthy_detail_screen</item>
         <item>@layout/leaf_rust_detail_screen</item>
     </string-array>
