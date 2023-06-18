@@ -39,15 +39,19 @@
         android:name="com.fadlan.guavacare.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_cameraFragment"
-            app:destination="@id/cameraFragment" />
+
         <action
             android:id="@+id/action_homeFragment_to_cameraLeafFragment"
             app:destination="@id/cameraLeafFragment" />
         <action
+            android:id="@+id/action_homeFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
             android:id="@+id/action_homeFragment_to_listGuavaDiseaseFragment"
             app:destination="@id/listGuavaDiseaseFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_guavaDiseaseDetailFragment"
+            app:destination="@id/guavaDiseaseDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/cameraFragment"

@@ -10,8 +10,24 @@
     <color name="light_grey">#D3D3D3</color>
     <color name="dotted_line">#838383</color>
 
+    <color name="grey_text">#767575</color>
+
     <color name="blue">#7BCEFF</color>
     <color name="green_700">#388E3C</color>
     <color name="green_500">#4CAF50</color>
     <color name="green_100">#4CDC6C</color>
+
+    <color name="guava_color">#FF5D55</color>
+    <color name="guava_color_card">#FF6670</color>
+    <color name="leaf_color">#80B524</color>
+
+
+    <!--card disease list colors-->
+    <color name="card_guava_fill">#0DFF6670</color>
+    <color name="card_guava_border">#66FF5D55</color>
+    <color name="card_guava_header">#430906</color>
+    <color name="card_guava_subheader">#817271</color>
+
+    <color name="card_leaf_fill">#0D80B524</color>
+    <color name="card_leaf_border">#6680B524</color>
 </resources>

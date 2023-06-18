@@ -66,6 +66,11 @@ class GuavaDiseaseDetailFragment : Fragment() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
+    }
+
     companion object {
         const val EXTRA_DISEASE_NAME = "extra_disease_name"
         const val EXTRA_DISEASE_IMAGE = "extra_disease_image"
