@@ -49,7 +49,7 @@ class PredictAdapter(private val resultDetection: ArrayList<Detection>)  : Recyc
         fun bind(data: Detection) {
             binding.apply {
                 tvNameResult.text = "${data.name}"
-                tvAccResult.text = "Akurasi: ${data.accuracy}%"
+                tvAccResult.text = "${data.accuracy}%"
                 itemView.setOnClickListener { onItemClickDetail.onItemClicked(data) }
             }
 //            with(itemView) {

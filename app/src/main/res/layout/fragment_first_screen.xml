@@ -12,11 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
+        android:stateListAnimator="@null"
         android:text="Lewati"
-        android:textColor="@color/black"
+        android:textColor="@color/dotted_line"
         android:textSize="15sp"
-        app:cornerRadius="30dp"
-        app:backgroundTint="@color/light_grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,8 +23,8 @@
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginTop="150dp"
-        android:src="@drawable/guava_healthy2"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/onboarding1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,10 +33,11 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Lorem"
-        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:text="Welcome to GuavaCare"
+        android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -50,23 +50,28 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:gravity="center"
-        android:text="lorem ipsum dolor"
+        android:text="GuavaCare adalah aplikasi yang dapat melakukan klasifikasi penyakit pada daun dan buah jambu."
         android:textSize="16sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/next"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
         android:text="Berikutnya"
-        android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         android:textStyle="bold"
+        app:backgroundTint="@color/green_500"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
