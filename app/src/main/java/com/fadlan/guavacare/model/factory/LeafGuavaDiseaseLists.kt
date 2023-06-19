@@ -11,6 +11,7 @@ object LeafGuavaDiseaseLists {
     private lateinit var diseaseImage: TypedArray
     private lateinit var diseaseName: Array<String>
     private lateinit var diseaseDetail: TypedArray
+    private lateinit var diseaseSubName: Array<String>
 
     fun addLeafDisease(resources: Resources): ArrayList<LeafGuavaDisease>{
         prepare(resources)
@@ -18,7 +19,8 @@ object LeafGuavaDiseaseLists {
             val guavaDisease = LeafGuavaDisease(
                 diseaseName[position],
                 diseaseImage.getResourceId(position, -1),
-                diseaseDetail.getResourceId(position, -1)
+                diseaseDetail.getResourceId(position, -1),
+                diseaseSubName[position]
             )
             leafGuavaDiseases.add(guavaDisease)
         }
@@ -29,5 +31,6 @@ object LeafGuavaDiseaseLists {
         diseaseName = resources.getStringArray(R.array.leafDiseaseName)
         diseaseImage = resources.obtainTypedArray(R.array.leafDiseaseImage)
         diseaseDetail = resources.obtainTypedArray(R.array.detail_leaf_disease_layout)
+        diseaseSubName = resources.getStringArray(R.array.leafDiseaseNameIndo)
     }
 }

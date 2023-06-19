@@ -10,8 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.viewpager2.widget.ViewPager2
 import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_DETAIL
 import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_IMAGE
 import com.fadlan.guavacare.GuavaDiseaseDetailFragment.Companion.EXTRA_DISEASE_NAME
@@ -22,17 +20,15 @@ import com.fadlan.guavacare.model.GuavaDisease
 import com.fadlan.guavacare.model.LeafGuavaDisease
 import com.fadlan.guavacare.model.factory.GuavaDiseaseLists.addDisease
 import com.fadlan.guavacare.model.factory.GuavaDiseaseLists.guavaDiseases
-import com.fadlan.guavacare.model.factory.LeafGuavaDiseaseLists
 import com.fadlan.guavacare.model.factory.LeafGuavaDiseaseLists.addLeafDisease
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
+import com.fadlan.guavacare.model.factory.LeafGuavaDiseaseLists.leafGuavaDiseases
 
 class HomeFragment : Fragment(), View.OnClickListener {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private var guavaDiseaseAdapter = GuavaDiseaseAdapter(guavaDiseases)
-    private var leafGuavaDiseaseAdapter = LeafGuavaDiseaseAdapter(LeafGuavaDiseaseLists.leafGuavaDiseases)
+    private var leafGuavaDiseaseAdapter = LeafGuavaDiseaseAdapter(leafGuavaDiseases)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,10 +43,9 @@ class HomeFragment : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
 
         setHasOptionsMenu(true)
-        addDisease(resources)
-        addLeafDisease(resources)
         recyclerView()
         leafRecyclerView()
+
 
         binding.btnDeteksi.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_cameraFragment)
@@ -67,14 +62,6 @@ class HomeFragment : Fragment(), View.OnClickListener {
         binding.cekJambuButton.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_cameraFragment)
         )
-
-//        val sectionsPagerAdapter = SectionsPagerAdapter(this)
-//        val viewPager: ViewPager2 = binding.viewPager
-//        viewPager.adapter = sectionsPagerAdapter
-//        val tabs: TabLayout = binding.tabs
-//        TabLayoutMediator(tabs, viewPager) { tab, position ->
-//            tab.text = resources.getString(TAB_TITLES[position])
-//        }.attach()
     }
 
 
@@ -105,8 +92,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
     fun recyclerView(){
         binding.apply {
-            rvListDiseases.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL ,false)
-
+            rvListDiseases.layoutManager = GridLayoutManager(activity, 1)
 
             guavaDiseaseAdapter= GuavaDiseaseAdapter(guavaDiseases)
             rvListDiseases.adapter=guavaDiseaseAdapter
@@ -119,16 +105,16 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 override fun onItemClicked(data: GuavaDisease) {
                     selectedGuavaDisease(data)
                 }
-                }
+            }
             )
         }
     }
 
     private fun leafRecyclerView(){
         binding.apply {
-            rvListLeafDiseases.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL ,false)
+            rvListLeafDiseases.layoutManager = GridLayoutManager(activity, 1)
 
-            leafGuavaDiseaseAdapter= LeafGuavaDiseaseAdapter(LeafGuavaDiseaseLists.leafGuavaDiseases)
+            leafGuavaDiseaseAdapter= LeafGuavaDiseaseAdapter(leafGuavaDiseases)
             rvListLeafDiseases.adapter=leafGuavaDiseaseAdapter
 
             leafGuavaDiseaseAdapter.notifyDataSetChanged()
@@ -172,7 +158,13 @@ class HomeFragment : Fragment(), View.OnClickListener {
         super.onStop()
         addDisease(resources).removeAll(guavaDiseases.toSet())
         addLeafDisease(resources)
-            .removeAll(LeafGuavaDiseaseLists.leafGuavaDiseases.toSet())
+            .removeAll(leafGuavaDiseases.toSet())
+    }
+
+    override fun onResume() {
+        super.onResume()
+        addDisease(resources)
+        addLeafDisease(resources)
     }
 
     companion object {

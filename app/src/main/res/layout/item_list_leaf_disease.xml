@@ -6,13 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="20dp"
-    android:layout_marginRight="20dp"
     android:clickable="true"
-    app:cardBackgroundColor="@color/card_guava_fill"
+    app:cardBackgroundColor="@color/card_leaf_fill"
     app:cardCornerRadius="10dp"
     app:cardElevation="0dp"
     app:strokeWidth="1dp"
-    app:strokeColor="@color/card_guava_border"
+    app:strokeColor="@color/card_leaf_border"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout

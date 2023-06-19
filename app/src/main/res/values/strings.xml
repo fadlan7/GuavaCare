@@ -9,6 +9,13 @@
         <item><b> Styler end Root</b></item>
     </string-array>
 
+    <string-array name="guavaDiseaseNameIndo">
+        <item><b>Buah jambu sehat</b></item>
+        <item><b>Penyakit busuk phytopthora</b></item>
+        <item><b>Penyakit kudis jambu</b></item>
+        <item><b> Penyakit busuk pangkal jambu</b></item>
+    </string-array>
+
     <string name="phytophthora_cause">Buah yang terinfeksi busuk Phytophthora tampak berwarna coklat keabu-abuan dan basah kuyup dengan bagian tengah berwarna hitam keabu-abuan. Penyakit ini muncul dalam bentuk pertumbuhan miselium putih bertepung di atas buah.</string>
     <string name="phytophthora_cause2">Jamur yang menginfeksi buah dapat bersumber dari tanah, batang yang sakit kanker batang, buah yang sakit, dan tumbuhan inang lain. Phytophthora palmivora terutama bertahan dalam tanah. Dari sini jamur dapat terbawa oleh percikan air hujan ke buah-buah yang dekat tanah. Setelah mengadakan infeksi, dalam waktu beberapa hari jamur pada buah sudah dapat menghasilkan banyak sporangium (bagian tubuh jamur yang berfungsi sebagai tempat pembentukan spora). Sporangium ini dapat terbawa oleh percikan air, atau oleh angin, dan mencapai buah yang lebih tinggi.</string>
     <string name="phytophthora_treatment">Memetik semua buah busuk yang dilakukan bersamaan dengan pemangkasan ataupun saat panen, kemudian dibenamkan ke dalam tanah sedalam 30 cm.</string>
@@ -55,6 +62,12 @@
         <item><b>Dot</b></item>
         <item><b>Leaf healthy</b></item>
         <item><b>Red rust</b></item>
+    </string-array>
+
+    <string-array name="leafDiseaseNameIndo">
+        <item><b>Penyakit daun berlubang</b></item>
+        <item><b>Daun jambu sehat</b></item>
+        <item><b>Penyakit daun karat merah</b></item>
     </string-array>
 
     <string name="rust_cause">Penyakit ini disebabkan oleh alga Cephaleuros virescens pada daun, bunga, buah, ranting dan batang. Pada permukaan atas daun ditumbuhi talus yang tegak, dengan filamen berwarna kuning hingga merah. Daun di infeksi pada bagian tepi, pinggir atau seringkali pada area dekat tulang daun. Penyebabnya juga disebabkan oleh curah hujan yang tinggi, kelembapan yang berlebihan dan suhu hangat. </string>

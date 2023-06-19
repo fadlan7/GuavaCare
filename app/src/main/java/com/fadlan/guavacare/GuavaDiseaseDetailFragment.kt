@@ -75,5 +75,6 @@ class GuavaDiseaseDetailFragment : Fragment() {
         const val EXTRA_DISEASE_NAME = "extra_disease_name"
         const val EXTRA_DISEASE_IMAGE = "extra_disease_image"
         const val EXTRA_DISEASE_DETAIL = "extra_disease_detail"
+        const val EXTRA_DISEASE_SUB_NAME = "extra_disease_name"
     }
 }

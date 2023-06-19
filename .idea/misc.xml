@@ -29,7 +29,7 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_detail.xml" value="0.25" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_detail_custom.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_list.xml" value="0.209375" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_home.xml" value="0.21019108280254778" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_leaf_disease_list.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_list_guava_disease.xml" value="0.19076457229371688" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_list_guava_disease_custom.xml" value="0.22" />
@@ -50,7 +50,7 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_guava_disease.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_guava_disease.xml" value="0.18" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_guava_disease_custom.xml" value="0.5" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_leaf_disease.xml" value="0.22" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_leaf_disease.xml" value="0.75" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_dot_detail_screen.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_healthy_detail_screen.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_rust_detail_screen.xml" value="0.209375" />

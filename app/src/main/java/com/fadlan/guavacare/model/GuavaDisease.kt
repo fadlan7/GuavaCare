@@ -8,5 +8,6 @@ import kotlinx.android.parcel.Parcelize
 data class GuavaDisease (
     val diseaseName: String?,
     val diseaseImage: Int?,
-    val diseaseDetail: Int?
+    val diseaseDetail: Int?,
+    val diseaseSubName: String?,
 ): Parcelable
