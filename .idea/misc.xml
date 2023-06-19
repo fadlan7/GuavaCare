@@ -6,6 +6,7 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2005" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/bg_round_top.xml" value="0.1" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/detail_rectangle.xml" value="0.1505" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/detail_rectangle2.xml" value="0.1645" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/dotted_line.xml" value="0.1" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/ic_arrow_right.xml" value="0.156" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/drawable/ic_baseline_flash_auto_24.xml" value="0.1005" />
@@ -21,22 +22,22 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/activity_test.xml" value="0.5" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/app_bar.xml" value="0.5" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/appbar.xml" value="0.22" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/appbar.xml" value="0.67" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_camera.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_camera_leaf.xml" value="0.14895833333333333" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_first_screen.xml" value="0.25" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava__list__custom.xml" value="0.1" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_detail_custom.xml" value="0.12962962962962962" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_detail.xml" value="0.16" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_detail.xml" value="0.25" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_detail_custom.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_guava_disease_list.xml" value="0.209375" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_home.xml" value="0.5" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_leaf_disease_list.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_list_guava_disease.xml" value="0.19076457229371688" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_list_guava_disease_custom.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_onboarding.xml" value="0.2" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_second_screen.xml" value="0.17" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_splash_screen.xml" value="0.18" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_third_screen.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_view_pager.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_healthy_detail__screen.xml" value="0.33" />
@@ -52,8 +53,8 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_guava_disease.xml" value="0.18" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_guava_disease_custom.xml" value="0.5" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_leaf_disease.xml" value="0.75" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_dot_detail_screen.xml" value="0.1" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_healthy_detail_screen.xml" value="0.209375" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_dot_detail_screen.xml" value="0.2" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_healthy_detail_screen.xml" value="0.125" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_rust_detail_screen.xml" value="0.2" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/rv_prediction_guava_leaf_result.xml" value="0.5" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/rv_prediction_guava_result.xml" value="0.1" />
