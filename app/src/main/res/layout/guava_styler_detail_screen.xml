@@ -1,75 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/guava_styler_detail"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tv_bhs_indo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="30dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Penyakit busuk pangkal jambu"
-        android:textColor="@color/black"
-        android:textSize="17sp" />
+        android:textColor="@color/grey_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bhs_indo" />
 
     <TextView
         android:id="@+id/t_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="Penyebab"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="105dp"
+        android:layout_height="8dp"
+        android:background="@drawable/detail_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/t_desc"
+        app:layout_constraintTop_toBottomOf="@+id/t_desc" />
 
     <TextView
         android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/roboto_regular"
         android:justificationMode="inter_word"
-        android:textColor="@color/black"
-        android:paddingHorizontal="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="20dp"
         android:text="@string/styler_cause"
-        />
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView" />
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@drawable/dotted_line"
-        android:layerType="software" />
-
-
-    <TextView
-        android:id="@+id/t_damage_symptom"
+        android:id="@+id/pengendalian"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="Pengendalian"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+    <View
+        android:id="@+id/myRectangleView2"
+        android:layout_width="140dp"
+        android:layout_height="8dp"
+        android:background="@drawable/detail_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/pengendalian"
+        app:layout_constraintTop_toBottomOf="@+id/pengendalian" />
 
     <TextView
-        android:id="@+id/treat"
+        android:id="@+id/desc2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/roboto_regular"
         android:justificationMode="inter_word"
-        android:textColor="@color/black"
-        android:paddingHorizontal="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="20dp"
         android:text="@string/styler_treatment"
-        />
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView2" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

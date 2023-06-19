@@ -1,18 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/leaf_healthy_detail"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tv_bhs_indo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="30dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Daun jambu sehat"
-        android:textColor="@color/black"
-        android:textSize="17sp" />
-</LinearLayout>
+        android:textColor="@color/grey_text"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bhs_indo" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/t_desc"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:fontFamily="@font/montserrat_semi_bold"-->
+    <!--        android:text="Penyebab"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/view" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/myRectangleView"-->
+    <!--        android:layout_width="105dp"-->
+    <!--        android:layout_height="8dp"-->
+    <!--        android:background="@drawable/detail_rectangle"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/t_desc"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/t_desc" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/desc"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:fontFamily="@font/roboto_regular"-->
+    <!--        android:justificationMode="inter_word"-->
+    <!--        android:text="@string/phytophthora_cause"-->
+    <!--        android:textColor="@color/grey_text_content"-->
+    <!--        android:textSize="14dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/myRectangleView" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/pengendalian"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:fontFamily="@font/montserrat_semi_bold"-->
+    <!--        android:text="Pengendalian"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/myRectangleView"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/desc" />-->
+
+    <!--    <View-->
+    <!--        android:id="@+id/myRectangleView2"-->
+    <!--        android:layout_width="140dp"-->
+    <!--        android:layout_height="8dp"-->
+    <!--        android:background="@drawable/detail_rectangle"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/pengendalian"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/pengendalian" />-->
+
+
+    <!--    <View-->
+    <!--        android:id="@+id/number_vertical_line"-->
+    <!--        android:layout_width="2dp"-->
+    <!--        android:layout_height="140dp"-->
+    <!--        android:background="@color/grey_text_content"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/tv_num3"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/tv_num1"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/tv_num1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_num1" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_num1"-->
+    <!--        android:layout_width="24dp"-->
+    <!--        android:layout_height="24dp"-->
+    <!--        android:layout_gravity="center_vertical"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:background="@drawable/detail_rectangle"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="1"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:theme="@style/DetailDesc"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/myRectangleView2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/myRectangleView2"-->
+    <!--        app:layout_constraintRight_toLeftOf="@+id/pengendalian1"/>-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/pengendalian1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="45dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:text="@string/phytophthora_treatment"-->
+    <!--        android:theme="@style/DetailDesc"-->
+    <!--        android:textSize="14dp"-->
+    <!--        android:fontFamily="@font/roboto_regular"-->
+    <!--        android:textColor="@color/grey_text_content"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/tv_num1" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_num2"-->
+    <!--        android:layout_width="24dp"-->
+    <!--        android:layout_height="24dp"-->
+    <!--        android:layout_gravity="center_vertical"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:background="@drawable/detail_rectangle"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="2"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:theme="@style/DetailDesc"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/tv_num1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/pengendalian1" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/pengendalian2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="45dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:fontFamily="@font/roboto_regular"-->
+    <!--        android:text="@string/phytophthora_treatment2"-->
+    <!--        android:textColor="@color/grey_text_content"-->
+    <!--        android:textSize="14dp"-->
+    <!--        android:theme="@style/DetailDesc"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/tv_num2" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_num3"-->
+    <!--        android:layout_width="24dp"-->
+    <!--        android:layout_height="24dp"-->
+    <!--        android:layout_gravity="center_vertical"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:background="@drawable/detail_rectangle"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="3"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:theme="@style/DetailDesc"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/tv_num2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/pengendalian2" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/pengendalian3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="45dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:fontFamily="@font/roboto_regular"-->
+    <!--        android:text="@string/phytophthora_treatment3"-->
+    <!--        android:textColor="@color/grey_text_content"-->
+    <!--        android:textSize="14dp"-->
+    <!--        android:theme="@style/DetailDesc"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/tv_num3" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
