@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">GuavaCare</string>
-    <string name="deteksi">Deteksi</string>
 
     <string-array name="guavaDiseaseName">
         <item><b>Guava healthy</b></item>
@@ -16,8 +15,7 @@
         <item><b> Penyakit busuk pangkal jambu</b></item>
     </string-array>
 
-    <string name="phytophthora_cause">Buah yang terinfeksi busuk Phytophthora tampak berwarna coklat keabu-abuan dan basah kuyup dengan bagian tengah berwarna hitam keabu-abuan. Penyakit ini muncul dalam bentuk pertumbuhan miselium putih bertepung di atas buah.</string>
-    <string name="phytophthora_cause2">Jamur yang menginfeksi buah dapat bersumber dari tanah, batang yang sakit kanker batang, buah yang sakit, dan tumbuhan inang lain. Phytophthora palmivora terutama bertahan dalam tanah. Dari sini jamur dapat terbawa oleh percikan air hujan ke buah-buah yang dekat tanah. Setelah mengadakan infeksi, dalam waktu beberapa hari jamur pada buah sudah dapat menghasilkan banyak sporangium (bagian tubuh jamur yang berfungsi sebagai tempat pembentukan spora). Sporangium ini dapat terbawa oleh percikan air, atau oleh angin, dan mencapai buah yang lebih tinggi.</string>
+    <string name="phytophthora_cause">Buah yang terinfeksi busuk Phytophthora tampak berwarna coklat keabu-abuan dan basah kuyup dengan bagian tengah berwarna hitam keabu-abuan. Penyakit ini muncul dalam bentuk pertumbuhan miselium putih bertepung di atas buah. Jamur yang menginfeksi buah dapat bersumber dari tanah, batang yang sakit kanker batang, buah yang sakit, dan tumbuhan inang lain. Phytophthora palmivora terutama bertahan dalam tanah. Dari sini jamur dapat terbawa oleh percikan air hujan ke buah-buah yang dekat tanah. Setelah mengadakan infeksi, dalam waktu beberapa hari jamur pada buah sudah dapat menghasilkan banyak sporangium (bagian tubuh jamur yang berfungsi sebagai tempat pembentukan spora). Sporangium ini dapat terbawa oleh percikan air, atau oleh angin, dan mencapai buah yang lebih tinggi.</string>
     <string name="phytophthora_treatment">Memetik semua buah busuk yang dilakukan bersamaan dengan pemangkasan ataupun saat panen, kemudian dibenamkan ke dalam tanah sedalam 30 cm.</string>
     <string name="phytophthora_treatment2">Pengaturan kelembaban kebun bisa dilakukan dengan memperbaiki drainase, memangkas tanaman dan pohon pelindung dengan teratur, dan dengan mengendalikan gulma. </string>
     <string name="phytophthora_treatment3">Pemberian Dithane efektif dalam mengendalikan penyakit</string>
@@ -37,17 +35,6 @@
         <item>@drawable/phytopthora</item>
         <item>@drawable/scab1</item>
         <item>@drawable/styler_end_root1</item>
-    </string-array>
-
-    <string-array name="guavaDiseaseImageDetail">
-        <item>@drawable/guava_healthy</item>
-        <item>@drawable/guava_healthy2</item>
-        <item>@drawable/phytopthora</item>
-        <item>@drawable/phytopthora2</item>
-        <item>@drawable/scab1</item>
-        <item>@drawable/scab2</item>
-        <item>@drawable/styler_end_root1</item>
-        <item>@drawable/styler_end_root2</item>
     </string-array>
 
     <string-array name="detail_guava_disease_layout">
@@ -75,7 +62,6 @@
     <string name="rust_treatment2">Jarak tanam yang tidak rapat dapat mengurangi penyebaran red rust / karat merah.</string>
 
     <string name="dot_cause">Dot / Daun berlubang disebabkan oleh ulat kantung (Lepidoptera: Psychidae), ulat kantung memakan daun muda terutama pada bagian bawah daun, sehingga mengakibatkan daun berlubang dan kering. Gejala kerusakan pada daun disebabkan aktivitas makan larva pada lapisan epidermis bawah dan jaringan mesofil dengan menyisakan epidermis atasnya mengakibatkan window panning. Sisa epidermis atas tersebut lalu mengering dan menyisakan tulang daun </string>
-    <string name="dot_treatment"></string>
     <string name="dot_treatment2">Biologis: pemanfaatan musuh alami predator Sycanus sp. (Hemiptera: Reduviidae) dan Eocanthecona furcellata (Hemiptera: Pentatomidae) serta parasitoid ulat Brachimeria lasus (Hymenoptera: Chalcididae)</string>
     <string name="dot_treatment3">Mekanik: pemangkasan daun yang terserang oleh ulat kantung, pemanfaatan perangkap cahaya untuk menangkap imago jantan dari ulat kantung</string>
     <string name="dot_treatment4">Kimiawi: dilakukan jika populasi sudah melewati ambang batas. Aplikasi dapat dilakukan dengan penyemprotan secara langsung atau injeksi/infus akar. Bahan aktif yang direkomendasikan yaitu abakmektin, abakmektin+sipermetrin, deltametrin, diazinon, kloramtiniliprol, dan lain-lain.</string>
@@ -86,20 +72,12 @@
         <item>@drawable/rust</item>
     </string-array>
 
-    <string-array name="leafDiseaseImageDetail">
-        <item>@drawable/leaf_healthy</item>
-        <item>@drawable/leaf_healthy2</item>
-        <item>@drawable/rust</item>
-        <item>@drawable/rust2</item>
-    </string-array>
-
     <string-array name="detail_leaf_disease_layout">
         <item>@layout/leaf_dot_detail_screen</item>
         <item>@layout/leaf_healthy_detail_screen</item>
         <item>@layout/leaf_rust_detail_screen</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="tab_text_1">Home</string>
     <string name="tab_text_2">Profile</string>

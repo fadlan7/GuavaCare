@@ -139,7 +139,6 @@ class Classification(context: Context) {
             )
             recognitions.add(detection)
         }
-//        dataPicture.recycle()
         dataDetail.recycle()
         return recognitions
     }

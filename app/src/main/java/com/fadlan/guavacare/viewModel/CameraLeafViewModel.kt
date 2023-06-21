@@ -9,7 +9,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.fadlan.guavacare.model.Detection
-import com.fadlan.guavacare.model.factory.Classification
 import com.fadlan.guavacare.model.factory.LeafClassification
 import com.priyankvasa.android.cameraviewex.Image
 import kotlinx.coroutines.Dispatchers

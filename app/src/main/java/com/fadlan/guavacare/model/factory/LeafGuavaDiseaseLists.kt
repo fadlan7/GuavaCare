@@ -3,7 +3,6 @@ package com.fadlan.guavacare.model.factory
 import android.content.res.Resources
 import android.content.res.TypedArray
 import com.fadlan.guavacare.R
-import com.fadlan.guavacare.model.GuavaDisease
 import com.fadlan.guavacare.model.LeafGuavaDisease
 
 object LeafGuavaDiseaseLists {

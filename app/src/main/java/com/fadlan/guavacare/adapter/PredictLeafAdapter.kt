@@ -1,14 +1,10 @@
 package com.fadlan.guavacare.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.fadlan.guavacare.R
 import com.fadlan.guavacare.databinding.RvPredictionGuavaLeafResultBinding
-import com.fadlan.guavacare.databinding.RvPredictionGuavaResultBinding
 import com.fadlan.guavacare.model.Detection
-//import kotlinx.android.sy
 
 class PredictLeafAdapter(private val resultDetection: ArrayList<Detection>)  : RecyclerView.Adapter<PredictLeafAdapter.RecyclerViewHolder>(){
     private lateinit var onItemClickDetail: OnItemClickCallBack
@@ -23,14 +19,6 @@ class PredictLeafAdapter(private val resultDetection: ArrayList<Detection>)  : R
         resultDetection.addAll(items)
         notifyDataSetChanged()
     }
-
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
-//        val view: View = LayoutInflater
-//            .from(parent.context)
-//            .inflate(R.layout.item_guava_disease, parent, false)
-//        return RecyclerViewHolder(view)
-//
-//    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
         val binding = RvPredictionGuavaLeafResultBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -53,12 +41,6 @@ class PredictLeafAdapter(private val resultDetection: ArrayList<Detection>)  : R
                 tvAccResult.text = "${data.accuracy}%"
                 itemView.setOnClickListener { onItemClickDetail.onItemClicked(data) }
             }
-//            with(itemView) {
-//                tv_name_result.text = "Name of Disease: ${detection.name}"
-//                //val acc = "Probability: ${detection.accuracy*100}%"
-//                tv_acc_result.text = "Probability: ${detection.accuracy}%"
-//                itemView.setOnClickListener { onItemClickDetail.onItemClicked(detection) }
-//            }
         }
     }
 

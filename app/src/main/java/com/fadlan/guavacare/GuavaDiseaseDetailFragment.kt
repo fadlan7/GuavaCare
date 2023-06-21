@@ -1,16 +1,14 @@
 package com.fadlan.guavacare
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.NavHostFragment
+import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.fadlan.guavacare.databinding.FragmentGuavaDiseaseDetailBinding
-import com.fadlan.guavacare.model.GuavaDisease
 
 class GuavaDiseaseDetailFragment : Fragment() {
 

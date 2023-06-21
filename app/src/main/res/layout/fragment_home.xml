@@ -270,19 +270,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_guava_disease_subheader"
                 tools:listitem="@layout/item_list_guava_disease" />
-            <!--            <androidx.recyclerview.widget.RecyclerView-->
-            <!--                android:id="@+id/rv_list_leaf_diseases"-->
-            <!--                android:layout_width="0dp"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:paddingBottom="10dp"-->
-            <!--                android:clipToPadding="false"-->
-            <!--                android:splitMotionEvents="false"-->
-            <!--                android:layout_marginHorizontal="10dp"-->
-            <!--                android:nestedScrollingEnabled="false"-->
-            <!--                app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                app:layout_constraintStart_toStartOf="parent"-->
-            <!--                app:layout_constraintTop_toBottomOf="@+id/tv_guava_disease_subheader"-->
-            <!--                tools:listitem="@layout/item_list_leaf_disease" />-->
 
             <TextView
                 android:id="@+id/tv_leaf_disease_header"
@@ -328,38 +315,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_leaf_disease_subheader"
                 tools:listitem="@layout/item_list_leaf_disease" />
-
-            <!--                        <androidx.recyclerview.widget.RecyclerView-->
-            <!--                            android:id="@+id/rv_list_diseases"-->
-            <!--                            android:layout_width="0dp"-->
-            <!--                            android:layout_height="wrap_content"-->
-            <!--                            android:paddingBottom="10dp"-->
-            <!--                            android:clipToPadding="false"-->
-            <!--                            android:splitMotionEvents="false"-->
-            <!--                            android:layout_marginHorizontal="10dp"-->
-            <!--                            android:nestedScrollingEnabled="false"-->
-            <!--                            app:layout_constraintEnd_toEndOf="parent"-->
-            <!--                            app:layout_constraintStart_toStartOf="parent"-->
-            <!--                            app:layout_constraintTop_toBottomOf="@+id/tv_leaf_disease_subheader"-->
-            <!--                            tools:listitem="@layout/item_list_guava_disease" />-->
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-<!--    <com.google.android.material.tabs.TabLayout-->
-<!--        android:id="@+id/tabs"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="32dp"-->
-<!--        android:background="@color/green_500"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/btn_deteksi"-->
-<!--        app:tabTextColor="@android:color/black" />-->
-
-<!--    <androidx.viewpager2.widget.ViewPager2-->
-<!--        android:id="@+id/view_pager"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/tabs" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
