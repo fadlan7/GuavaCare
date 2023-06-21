@@ -91,19 +91,6 @@ class Classification(context: Context) {
         return parseResults(result, context)
     }
 
-    fun recognizeImage(bitmap: Bitmap?, context: Context): ArrayList<Detection> {
-        val bitmapData =
-            bitmap?.let { Bitmap.createScaledBitmap(
-                it,
-                MODEL_INPUT_SIZE,
-                MODEL_INPUT_SIZE,
-                false) }
-        val byteBuffer = convertBitmapToByteBuffer(bitmapData)
-        val result = Array(BATCH_SIZE) { FloatArray(dataName.size) }
-        tfLiteModel.run(byteBuffer, result)
-        return parseResults(result, context)
-    }
-
     private fun convertBitmapToByteBuffer(bitmap: Bitmap?): ByteBuffer {
         val byteBuffer = ByteBuffer.allocateDirect(
             BATCH_SIZE *
