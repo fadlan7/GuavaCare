@@ -32,7 +32,7 @@ class Classification(context: Context) {
     private val dataName = context.resources.getStringArray(R.array.guavaDiseaseName)
 
     private fun getModelByteBuffer(assetManager: AssetManager): MappedByteBuffer {
-        val modelPath = "guava_disease2.tflite"
+        val modelPath = "guava_model.tflite"
         val fileDescriptor = assetManager.openFd(modelPath)
         val inputStream = FileInputStream(fileDescriptor.fileDescriptor)
         val fileChannel = inputStream.channel
