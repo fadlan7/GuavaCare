@@ -5,17 +5,18 @@
         <item><b>Guava healthy</b></item>
         <item><b>Phytopthora</b></item>
         <item><b>Scab</b></item>
-        <item><b> Styler end Root</b></item>
+        <item><b>Stylar end Rot</b></item>
     </string-array>
 
     <string-array name="guavaDiseaseNameIndo">
         <item><b>Buah jambu sehat</b></item>
         <item><b>Penyakit busuk phytopthora</b></item>
         <item><b>Penyakit kudis jambu</b></item>
-        <item><b> Penyakit busuk pangkal jambu</b></item>
+        <item><b>Penyakit busuk pangkal jambu</b></item>
     </string-array>
 
-    <string name="phytophthora_cause">Buah yang terinfeksi busuk Phytophthora tampak berwarna coklat keabu-abuan dan basah kuyup dengan bagian tengah berwarna hitam keabu-abuan. Penyakit ini muncul dalam bentuk pertumbuhan miselium putih bertepung di atas buah. Jamur yang menginfeksi buah dapat bersumber dari tanah, batang yang sakit kanker batang, buah yang sakit, dan tumbuhan inang lain. Phytophthora palmivora terutama bertahan dalam tanah. Dari sini jamur dapat terbawa oleh percikan air hujan ke buah-buah yang dekat tanah. Setelah mengadakan infeksi, dalam waktu beberapa hari jamur pada buah sudah dapat menghasilkan banyak sporangium (bagian tubuh jamur yang berfungsi sebagai tempat pembentukan spora). Sporangium ini dapat terbawa oleh percikan air, atau oleh angin, dan mencapai buah yang lebih tinggi.</string>
+    <string name="phytophthora_cause">Buah yang terinfeksi busuk phytophthora tampak berwarna coklat keabu-abuan dan basah kuyup dengan bagian tengah berwarna hitam keabu-abuan. Penyakit ini muncul dalam bentuk pertumbuhan miselium putih bertepung di atas buah.</string>
+    <string name="phytophthora_cause2">Jamur yang menginfeksi buah dapat bersumber dari tanah, batang yang sakit kanker batang, buah yang sakit, dan tumbuhan inang lain. Phytophthora palmivora akan bertahan dalam tanah, dari sini jamur dapat terbawa oleh percikan air hujan ke buah-buah yang dekat tanah. Setelah mengadakan infeksi, dalam waktu beberapa hari jamur pada buah sudah dapat menghasilkan banyak sporangium (bagian tubuh jamur yang berfungsi sebagai tempat pembentukan spora). Sporangium ini dapat terbawa oleh percikan air, atau oleh angin, dan mencapai buah yang lebih tinggi.</string>
     <string name="phytophthora_treatment">Memetik semua buah busuk yang dilakukan bersamaan dengan pemangkasan ataupun saat panen, kemudian dibenamkan ke dalam tanah sedalam 30 cm.</string>
     <string name="phytophthora_treatment2">Pengaturan kelembaban kebun bisa dilakukan dengan memperbaiki drainase, memangkas tanaman dan pohon pelindung dengan teratur, dan dengan mengendalikan gulma. </string>
     <string name="phytophthora_treatment3">Pemberian Dithane efektif dalam mengendalikan penyakit</string>
@@ -26,7 +27,7 @@
     <string name="scab_treatment3">Tutupi buah-buahan dengan kertas atau kantong plastik dengan satu sisi terbuka di panggung kecil</string>
     <string name="scab_treatment4">Kendalikan serangga kepik Helopeltis Spp untuk mengurangi inisiasi penyakit</string>
 
-    <string name="styler_cause">Stylar end root atau disebut busuk pangkal buah mengalami gejala kerusakan pada ujung buah yang kemudian membusuk yang disebabkan oleh patogen alternaria citri. Buah yang tidak sehat atau rusak rentan terhadap infeksi. Infeksi dapat terjadi saat buah masih berada di pohon. Dan yang terkena kelembapan yang lebih tinggi menjadi rusak yang paling parah.</string>
+    <string name="styler_cause">Stylar end rot atau disebut busuk pangkal buah mengalami gejala kerusakan pada ujung buah yang kemudian membusuk yang disebabkan oleh patogen alternaria citri. Buah yang tidak sehat atau rusak rentan terhadap infeksi. Infeksi dapat terjadi saat buah masih berada di pohon. Dan yang terkena kelembapan yang lebih tinggi menjadi rusak yang paling parah.</string>
     <string name="styler_treatment">Penyakit dapat dicegah dengan tanah berdrainase baik, banyak sinar matahari, pupuk sesekali, air yang cukup, dan pengendalian hama.</string>
 
 

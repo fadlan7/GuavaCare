@@ -137,7 +137,7 @@ class CameraFragment : Fragment(),View.OnClickListener {
     }
 
     override fun onPause() {
-        binding.camera.stop()
+//        binding.camera.stop()
         if (isButtonClicked) {
             isButtonClicked = false
             stateLoadingProgress(false)

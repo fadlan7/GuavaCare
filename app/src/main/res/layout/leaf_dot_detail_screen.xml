@@ -88,16 +88,6 @@
         app:layout_constraintTop_toBottomOf="@+id/pengendalian" />
 
 
-    <View
-        android:id="@+id/number_vertical_line"
-        android:layout_width="2dp"
-        android:layout_height="140dp"
-        android:background="@color/grey_text_content"
-        app:layout_constraintBottom_toTopOf="@+id/tv_num3"
-        app:layout_constraintEnd_toEndOf="@+id/tv_num1"
-        app:layout_constraintStart_toStartOf="@+id/tv_num1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_num1" />
-
     <TextView
         android:id="@+id/tv_num1"
         android:layout_width="24dp"
