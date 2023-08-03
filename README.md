@@ -9,7 +9,7 @@ StackEdit stores your files in your browser, which means all your files are auto
 
 ## Splash screen
 
-![splash screen](https://github.com/fadlan7/GuavaCare/blob/master/screenshot%20guavacare/splash%20screen.jpg){ width=200px }
+![splash screen](https://github.com/fadlan7/GuavaCare/blob/master/screenshot%20guavacare/splash%20screen.jpg){ width=200px height=200px}
 
 ## Onboarding screen
 
