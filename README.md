@@ -8,8 +8,8 @@ A mobile application that can perform disease classification on guava leaves and
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
 ## Splash screen
-<div style="float:left;margin:0 10px 10px 0">
-	![splash screen](https://github.com/fadlan7/GuavaCare/blob/master/screenshot%20guavacare/splash%20screen.jpg)
+<div style="float:left;margin:0 10px 10px 0" markdown="1">
+    ![splash screen](https://github.com/fadlan7/GuavaCare/blob/master/screenshot%20guavacare/splash%20screen.jpg)
 </div>
 
 ## Onboarding screen
