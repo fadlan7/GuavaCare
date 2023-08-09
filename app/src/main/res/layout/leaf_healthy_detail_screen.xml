@@ -29,4 +29,297 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_bhs_indo" />
 
+
+
+    <TextView
+        android:id="@+id/t_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Manfaat jambu biji"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="105dp"
+        android:layout_height="8dp"
+        android:background="@drawable/detail_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/t_desc"
+        app:layout_constraintTop_toBottomOf="@+id/t_desc" />
+
+    <TextView
+        android:id="@+id/tv_num_benefit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/detail_rectangle"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView" />
+
+
+    <TextView
+        android:id="@+id/benefit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/benefits"
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num_benefit" />
+
+    <TextView
+        android:id="@+id/tv_num_benefit2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/detail_rectangle"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/benefit1" />
+
+
+    <TextView
+        android:id="@+id/benefit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/benefits2"
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num_benefit2" />
+
+
+    <TextView
+        android:id="@+id/tv_num_benefit3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/detail_rectangle"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/benefit2" />
+
+
+    <TextView
+        android:id="@+id/benefit3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/benefits3"
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num_benefit3" />
+
+
+    <TextView
+        android:id="@+id/tv_num_benefit4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/detail_rectangle"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/white"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/benefit3" />
+
+
+    <TextView
+        android:id="@+id/benefit4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/benefits4"
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num_benefit4" />
+
+
+    <TextView
+        android:id="@+id/pengendalian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Tips merawat jambu biji"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView"
+        app:layout_constraintTop_toBottomOf="@+id/benefit4" />
+
+    <View
+        android:id="@+id/myRectangleView2"
+        android:layout_width="140dp"
+        android:layout_height="8dp"
+        android:background="@drawable/detail_rectangle"
+        app:layout_constraintStart_toStartOf="@+id/pengendalian"
+        app:layout_constraintTop_toBottomOf="@+id/pengendalian" />
+
+
+    <TextView
+        android:id="@+id/tv_num1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/detail_rectangle"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintRight_toLeftOf="@+id/pengendalian1"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView2"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView2" />
+
+
+    <TextView
+        android:id="@+id/pengendalian1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:text="@string/healthy_fruit"
+        android:theme="@style/DetailDesc"
+        android:textSize="14dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/grey_text_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num1" />
+
+    <TextView
+        android:id="@+id/tv_num2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/detail_rectangle"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintStart_toStartOf="@+id/tv_num1"
+        app:layout_constraintTop_toBottomOf="@+id/pengendalian1" />
+
+    <TextView
+        android:id="@+id/pengendalian2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/healthy_fruit2"
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num2" />
+
+    <TextView
+        android:id="@+id/tv_num3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/detail_rectangle"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/white"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintStart_toStartOf="@+id/tv_num2"
+        app:layout_constraintTop_toBottomOf="@+id/pengendalian2" />
+
+    <TextView
+        android:id="@+id/pengendalian3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/healthy_fruit3"
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num3" />
+
+    <TextView
+        android:id="@+id/tv_num4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/detail_rectangle"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/white"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintStart_toStartOf="@+id/tv_num2"
+        app:layout_constraintTop_toBottomOf="@+id/pengendalian3" />
+
+    <TextView
+        android:id="@+id/pengendalian4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/healthy_fruit4"
+        android:textColor="@color/grey_text_content"
+        android:textSize="14dp"
+        android:theme="@style/DetailDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_num4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

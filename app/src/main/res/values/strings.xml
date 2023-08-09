@@ -30,6 +30,15 @@
     <string name="styler_cause">Stylar end rot atau disebut busuk pangkal buah mengalami gejala kerusakan pada ujung buah yang kemudian membusuk yang disebabkan oleh patogen alternaria citri. Buah yang tidak sehat atau rusak rentan terhadap infeksi. Infeksi dapat terjadi saat buah masih berada di pohon. Dan yang terkena kelembapan yang lebih tinggi menjadi rusak yang paling parah.</string>
     <string name="styler_treatment">Penyakit dapat dicegah dengan tanah berdrainase baik, banyak sinar matahari, pupuk sesekali, air yang cukup, dan pengendalian hama.</string>
 
+    <string name="benefits">Menurunkan tekanan darah</string>
+    <string name="benefits2">Menurunkan resiko kanker</string>
+    <string name="benefits3">Meredakan flu dan batuk</string>
+    <string name="benefits4">Melancarkan saluran pencernaan</string>
+    <string name="healthy_fruit">Penyiraman bisa dilakukan sebanyak 2 kali untuk tanaman yang baru ditanam. Penyiraman dilakukan pada pagi dan sore hari. Setelah tanaman sudah cukup dewasa, frekuensi penyiraman dikurangi menjadi 1 kali sehari pada pagi hari.</string>
+    <string name="healthy_fruit2">Pupuk baru diberikan setelah tanaman sudah berumur 3—5 bulan. Pupuk yang diberikan adalah NPK (15-15-15) yang bisa Anda dapati di toko pertanian. Pupuk diberikan sebanyak 50—300 gram/pohon. Pemupukan selanjutnya bisa dilakukan setelah tanaman berumur 4 bulan hingga tanaman berbunga. Setelah pohon berusia 1—2 tahun, berikan NPK setahun sekali setelah proses panen raya berakhir.</string>
+    <string name="healthy_fruit3">Tunas liar atau tunas air pada pohon harus dipangkas karena bisa mengganggu pertumbuhan tanaman. Pemangkasan juga dilakukan ketika pohon sudah mencapai ketinggian 1,5—2 m dengan memilih tiga atau empat batang utama agar tajuk tanaman rimbun. Pemangkasan cabang yang lain dilakukan 1—2 cm dari batang utama sehingga luka pemangkasan tidak akan melukai batang utama. Pemangkasan juga dilakukan pada cabang yang tua, kering, dan tidak produktif.</string>
+    <string name="healthy_fruit4">Memangkas daun dan buah yang tidak sehat</string>
+
 
     <string-array name="guavaDiseaseImage">
         <item>@drawable/guava_healthy</item>

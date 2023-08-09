@@ -41,10 +41,10 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_third_screen.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/fragment_view_pager.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_healthy_detail__screen.xml" value="0.33" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_healthy_detail_screen.xml" value="0.125" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_healthy_detail_screen.xml" value="0.22" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_healthy_detail_screen_custom.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_phytopthora_detail__screen.xml" value="0.25" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_phytopthora_detail_screen.xml" value="0.33" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_phytopthora_detail_screen.xml" value="0.25" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_scab_detail__screen.xml" value="0.209375" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_scab_detail_screen.xml" value="0.5619335347432024" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/guava_styler_detail__screen.xml" value="0.209375" />
@@ -54,7 +54,7 @@
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_guava_disease_custom.xml" value="0.5" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/item_list_leaf_disease.xml" value="0.75" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_dot_detail_screen.xml" value="0.22" />
-        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_healthy_detail_screen.xml" value="0.125" />
+        <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_healthy_detail_screen.xml" value="0.1" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/leaf_rust_detail_screen.xml" value="0.67" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/rv_prediction_guava_leaf_result.xml" value="0.5" />
         <entry key="..\:/Users/Fadlan/Documents/PROJECT-SKRIPSI/mobile-app/app/src/main/res/layout/rv_prediction_guava_result.xml" value="0.1" />
