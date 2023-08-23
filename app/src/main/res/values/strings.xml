@@ -3,14 +3,14 @@
 
     <string-array name="guavaDiseaseName">
         <item><b>Guava healthy</b></item>
-        <item><b>Phytopthora</b></item>
+        <item><b>Phytophthora</b></item>
         <item><b>Scab</b></item>
         <item><b>Stylar end Rot</b></item>
     </string-array>
 
     <string-array name="guavaDiseaseNameIndo">
         <item><b>Buah jambu sehat</b></item>
-        <item><b>Penyakit busuk phytopthora</b></item>
+        <item><b>Penyakit busuk Phytophthora</b></item>
         <item><b>Penyakit kudis jambu</b></item>
         <item><b>Penyakit busuk pangkal jambu</b></item>
     </string-array>

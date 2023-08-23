@@ -46,7 +46,7 @@
 
     <View
         android:id="@+id/myRectangleView"
-        android:layout_width="105dp"
+        android:layout_width="185dp"
         android:layout_height="8dp"
         android:background="@drawable/detail_rectangle"
         app:layout_constraintStart_toStartOf="@+id/t_desc"
@@ -193,7 +193,7 @@
 
     <View
         android:id="@+id/myRectangleView2"
-        android:layout_width="140dp"
+        android:layout_width="230dp"
         android:layout_height="8dp"
         android:background="@drawable/detail_rectangle"
         app:layout_constraintStart_toStartOf="@+id/pengendalian"
